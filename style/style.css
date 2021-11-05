@@ -1,0 +1,190 @@
+/*
+
+*/
+:root {
+   /*Primary color*/
+   --bg-color: #fff;
+   --very-dark-desaturate-blue: hsl(238, 29%, 16%);
+   --soft-red: hsl(14, 88%, 65%);
+   
+   /*Gradiand*/   
+   --soft-violet: hsl(273, 75%, 66%);
+   --soft-blue: hsl(240, 73%, 65%);
+
+   /*text-color*/
+   --very-dark-grayish-blue: hsl(237, 12%, 33%);
+   --dark-grayish-blue: hsl(240, 6%, 50%);
+
+   /*dividers*/
+   --light-grayish-blue: hsl(240, 5%, .91%);
+
+   /*font*/
+   --main-font:'Kumbh Sans', sans-serif;
+}
+
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body {
+   min-height: 100vh;
+   max-width: 1001-vw;
+   background: linear-gradient(to top, var(--soft-blue),var(--soft-violet)) no-repeat;
+}
+
+/*card style start frome hear*/
+.faq {
+   width: 100vw;
+   height: 95vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+.faq-card {
+   width: 370px;
+   height: 500px;
+   
+   display: flex;
+   flex-direction: column;
+   position: relative;
+}
+
+/*illustration design start frome hear*/
+.visual-illustration{
+   
+}
+.visual-illustration .dextop{
+   display: none;
+}
+.visual-illustration .mobile{
+   width: 75%;
+   position: absolute;
+   top: -130px;
+   left: 12.5%;
+   filter: drop-shadow(0 35px 0px rgba(9, 9, 158, 0.09));
+}
+
+
+/*content section start frome hear*/
+.faq-content {
+   border-radius: 30px;
+   background-color: var(--bg-color);
+   padding: 50px;
+}
+.faq-title {
+   text-align: center;
+   margin-top: 95px;
+   margin-bottom: 20px;
+   font-family: var(--main-font);
+   font-size: 35px;
+   font-weight: bolder;
+}
+.content .qu {
+   text-align: left;
+   font-family: var(--main-font);
+   font-size: 14px;
+   font-weight: normal;
+   margin-bottom: 10px;
+}
+.content .ans {
+   text-align: left;
+   font-family: var(--main-font);
+   display: none;
+   
+}
+.dorpdown-icon {
+   float: right;
+   transform: rotateX(180deg);
+}
+.devaider-line {
+   margin: 20px 0;
+   border-top: var(--very-dark-grayish-blue);
+}
+
+@media (min-width: 900px) {
+  
+   .faq {
+      width: 100vw;
+      height: 95vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+   }
+   .faq-card {
+      width: 811px;
+      height: 520px;
+      border-radius: 20px;
+      background-color: var(--bg-color);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center ;
+      position: relative;
+      padding-right: 90px;
+   }
+   
+   /*illustration design start frome hear*/
+   .visual-illustration{
+      height: 500px;
+      width: 370px;
+      background-image: url('/images/illustration-woman-online-desktop.svg');
+      background-position: -62px center;
+      background-size: 430px;
+      background-repeat: no-repeat;
+      
+      position: relative;
+      align-self: center;
+   }
+
+   .visual-illustration .mobile {
+      display: none;
+   }
+   .visual-illustration .dextop {
+      display: unset;
+      position:absolute;
+      top: 42%;
+      left: -96px;
+
+   }
+   .visual-illustration .dextop img {
+      
+   }
+
+
+   /*Content design start frome hear*/
+   .faq-content {
+      border-radius: initial;
+      padding: unset;
+      background: none;
+   }
+   .faq-title {
+      margin: 0px;
+      padding-bottom:30px ;
+      text-align: left;
+   }
+   .dorpdown-icon {
+      margin-left: 20px;
+   }
+   .visual-illustration img{
+      position: static;
+      filter: drop-shadow(0 35px 0px rgba(9, 9, 158, 0.09));
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*this is frontend mentor defult design*/
+.attribution { color: rgb(5, 4, 59); font-size: 11px; text-align: center; }
+.attribution a { color: hsl(0, 0%, 100%); }
